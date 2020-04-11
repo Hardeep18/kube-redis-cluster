@@ -1,2 +1,1 @@
-# kube-redis-cluster
-Redis-cluster deployment on kubernetes
+# kubertenes-redis-cluster
