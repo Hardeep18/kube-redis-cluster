@@ -23,7 +23,7 @@ standard (default)   rancher.io/local-path   Delete          WaitForFirstConsume
 ## Deployment: Redis nodes
 
 ```
-cd storage/redis/kubernetes/
+cd kube-redis-cluster/redis-ha-kube/
 kubectl apply -n redis -f ./redis/redis-configmap.yaml
 kubectl apply -n redis -f ./redis/redis-statefulset.yaml
 
@@ -47,7 +47,7 @@ info replication
 ## Deployment: Redis Sentinel (3 instances)
 
 ```
-cd storage/redis/kubernetes/
+cd kube-redis-cluster/redis-ha-kube/
 kubectl apply -n redis -f ./sentinel/sentinel-statefulset.yaml
 
 kubectl -n redis get pods
